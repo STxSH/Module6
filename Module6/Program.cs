@@ -3,31 +3,39 @@
     internal class Program
     {
 
-        //task 6.2.2
+        //task 6.2.8
         static void Main(string[] args)
         {
-            Pen pen = new Pen("Синий", 25);
-
-            Console.WriteLine($"цвет: {pen.color}, цена: {pen.cost}");
             Console.ReadKey();
+        }        
+    }
+
+    class Rectangle
+    {
+        public int a;
+        public int b;
+
+        public int Square(int a, int b)
+        {
+            return a * b;
         }
 
-        class Pen
+        public Rectangle (int x, int y)
         {
-            public string color;
-            public int cost;
+            a = x;
+            b = y;
+        }
 
-            public Pen()
-            {
-                color = "Черный";
-                cost = 10;
-            }
+        public Rectangle (int x)
+        {
+            a = x;
+            b = x;
+        }
 
-            public Pen(string penColor, int penCost)
-            {
-                color = penColor;
-                cost = penCost;
-            }
+        public Rectangle()
+        {
+            a = 6;
+            b = 4;
         }
     }
 }
