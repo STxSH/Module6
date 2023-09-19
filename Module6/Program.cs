@@ -21,7 +21,7 @@
             }
             else
             {
-                Console.WriteLine(Автобус пуст);
+                Console.WriteLine("Автобус пуст");
             }
         }
     }
