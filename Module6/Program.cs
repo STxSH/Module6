@@ -3,39 +3,26 @@
     internal class Program
     {
 
-        //task 6.2.8
+        //task 6.3.2
         static void Main(string[] args)
         {
             Console.ReadKey();
         }        
     }
-
-    class Rectangle
+    class Bus
     {
-        public int a;
-        public int b;
+        public int? Load;
 
-        public int Square(int a, int b)
+        public void PrintStatus()
         {
-            return a * b;
-        }
-
-        public Rectangle (int x, int y)
-        {
-            a = x;
-            b = y;
-        }
-
-        public Rectangle (int x)
-        {
-            a = x;
-            b = x;
-        }
-
-        public Rectangle()
-        {
-            a = 6;
-            b = 4;
+            if (Load.HasValue)
+            {
+                Console.WriteLine($"Количесвто пассажиров: {Load.Value}");
+            }
+            else
+            {
+                Console.WriteLine(Автобус пуст);
+            }
         }
     }
 }
