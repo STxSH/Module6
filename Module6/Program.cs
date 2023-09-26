@@ -2,27 +2,53 @@
 {
     internal class Program
     {
-
-        //task 6.3.2
+        //task 6.5.2
         static void Main(string[] args)
         {
             Console.ReadKey();
-        }        
+        }
     }
-    class Bus
-    {
-        public int? Load;
 
-        public void PrintStatus()
+    class Circle
+    {
+        public double radius;
+
+        public double Area()
         {
-            if (Load.HasValue)
-            {
-                Console.WriteLine($"Количесвто пассажиров: {Load.Value}");
-            }
-            else
-            {
-                Console.WriteLine("Автобус пуст");
-            }
+            return 0;
+        }
+
+        public double Perimeter()
+        {
+            return 0;
+        }
+    }
+
+    class Triangle
+    {
+        public double a, b, c;
+        public double Area()
+        {
+            return 0;
+        }
+
+        public double Perimeter()
+        {
+            return 0;
+        }
+    }
+
+    class Square
+    {
+        public double a;
+        public double Area()
+        {
+            return 0;
+        }
+
+        public double Perimeter()
+        {
+            return 0;
         }
     }
 }
